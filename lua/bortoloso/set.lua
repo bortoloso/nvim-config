@@ -1,6 +1,7 @@
 -- use line numbers and relative line numbers
 vim.opt.nu = true
 vim.opt.relativenumber = true
+vim.opt.showmode = false
 
 -- settings for tabstop, 4 spaces, and convert tabs to spaces
 vim.opt.tabstop = 4
@@ -10,7 +11,6 @@ vim.opt.expandtab = true
 
 -- vim automatic adjust identation
 vim.opt.smartindent = true
-
 vim.opt.smartcase = true
 
 -- no wrap lines, when necessary use :set nowrap OR :set wrap to wrap/unwrap lines
@@ -38,15 +38,15 @@ vim.opt.updatetime = 50
 -- put a highlight on column 80
 vim.opt.colorcolumn = "80"
 
-vim.g.mapleader = " "
-
 -- colorscheme config
 vim.opt.background = "dark"
 vim.g.gruvbox_contrast_dark = "soft"
 vim.cmd.colorscheme('gruvbox')
 
+-- Show highlight in selectet row
 vim.opt.cursorline = true
 
+-- Show character to space and tab
 vim.opt.list = true
 vim.opt.listchars="space:.,tab:>_"
 

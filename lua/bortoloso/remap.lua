@@ -1,7 +1,7 @@
 -- Set leader to a space character
 vim.g.mapleader = " "
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>l", vim.cmd.ls)
+vim.keymap.set("n", "<C-l>", vim.cmd.ls)
 
 -- Tabs and buffer navigation
 vim.keymap.set("n", "<C-n>", vim.cmd.enew)
@@ -17,3 +17,10 @@ vim.keymap.set('n', 'Y', 'yy', {noremap = false})
 
 -- Use leader esc to clear the find pattern
 vim.keymap.set('n', '<leader><esc>', ':let @/ = ""<CR>',{noremap = true})
+
+-- Window movements
+vim.keymap.set("n", "<leader>h", ":wincmd h<CR>")
+vim.keymap.set("n", "<leader>j", ":wincmd j<CR>")
+vim.keymap.set("n", "<leader>k", ":wincmd k<CR>")
+vim.keymap.set("n", "<leader>l", ":wincmd l<CR>")
+
