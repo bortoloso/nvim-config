@@ -11,6 +11,7 @@ vim.opt.expandtab = true
 
 -- vim automatic adjust identation
 vim.opt.smartindent = true
+vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- no wrap lines, when necessary use :set nowrap OR :set wrap to wrap/unwrap lines
@@ -70,6 +71,7 @@ vim.filetype.add {
         ['.*%.ACT'] = 'plsql',
         ['.*%.SQL'] = 'plsql',
         ['.*%.SCR'] = 'plsql',
+        ['.*%.TRG'] = 'plsql',
         ['.*%.fnc'] = 'plsql',
         ['.*%.prc'] = 'plsql',
         ['.*%.pck'] = 'plsql',
@@ -81,6 +83,7 @@ vim.filetype.add {
         ['.*%.act'] = 'plsql',
         ['.*%.sql'] = 'plsql',
         ['.*%.scr'] = 'plsql',
+        ['.*%.trg'] = 'plsql',
     }
 }
 
